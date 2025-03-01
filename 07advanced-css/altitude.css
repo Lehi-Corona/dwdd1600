@@ -1,0 +1,296 @@
+*{box-sizing: border-box;}
+
+
+
+
+body {
+    font-family: "Oxygen", serif;
+    margin: 0;
+}
+/* header stuff here */
+
+header {
+    background-color: #273341;
+    padding: 1rem 10px;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left: 2vw;
+    font-size: small;
+}
+header div h4 {
+    color:#f2a71b;
+}
+header span {
+    color: #f2a71b;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+header div span {
+    margin-top: 20px;
+}
+
+/* navigation stuff here */
+/*small screens*/
+@media only screen and (max-width:600px) {
+nav ul {
+    margin: 0;
+    padding: 0 2vw;
+    list-style-type: none;
+}
+nav a {
+    display:block;
+    padding: .8rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: solid 1px #162440;
+    color: #f2a71b;
+}
+nav .active a {
+    background-color:#162440;
+    color: #f2a71b;
+    background-image: linear-gradient(to bottom, #162440, #111b31 )
+}
+}
+/*end of media query*/
+/*Big screens*/
+@media only screen and (min-width:601px) {
+    nav {
+        background-color: #f2a71b;
+    
+    }
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0 10px;
+        display: flex
+    }
+    nav a {
+        display: block;
+        padding: 1rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #162440;
+        font-weight: 700;
+    }
+    
+    nav li.active a {
+        background-color: #162440;
+        color: #f2a71b;
+    }
+    nav li a:hover {
+        color: white;
+    }
+}
+/*end of media query*/
+
+
+/* main stuff here */
+
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #3365a6;
+}
+
+main h2 {
+    color: #162440;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+}
+
+main ol {
+    padding:.5rem 30px;
+    background-color: #273341;
+    color: #f2a71b
+}
+
+main dl dt {
+    color: #3365a6;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #162440;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main ul {
+    list-style-type: circle
+}
+main ul li {
+    line-height: 130%;
+    margin-bottom: .5rem;
+    font-size: .9rem
+}
+
+main strong {
+    font-weight: 700;
+    color: black;
+}
+
+main em {
+    font-weight: 300;
+    color: #3365a6;
+}
+
+main address {
+    font-style:  normal;
+    background-color: #3365a6;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #f2a71b;
+}
+
+main a {
+    color:#3365a6;
+}
+
+main a:hover {
+    color: #f2a71b; 
+}
+
+
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right; 
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.skiresorthero {
+    width: 100%;
+    margin: 0;
+}
+.skiresorthero img {
+    width: 100%;
+    height: auto;
+}
+
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #3365a6;
+}
+
+div.gallery :hover {
+    box-shadow: 0px 0px 10px #3365a6;
+}
+
+
+/* footer stuff here */
+
+footer {
+    background-color: #3365a6;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #333;
+}
+footer p {
+    margin:0;
+    letter-spacing: 3px;
+    clear: both;
+}
+
+/* Form css here*/
+
+.myform {
+    background: #e3efff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-family: "Oxygen", sans-serif;
+    box-shadow: #3365a6;
+}
+
+.myform label {
+    margin:.5rem
+}
+.myform label, .myform select, .myform [type=text],.myform [type=tel], .myform [type=email], .myform textarea, .myform [type=date], .myform select {
+    display:block
+}
+
+.myform select {
+    margin: .5rem
+}
+
+.myform fieldset {
+    margin-bottom: 1rem;
+    border: 2px solid #162440
+}
+
+.myform select, .myform [type=text],.myform [type=tel], .myform [type=email], .myform [type=date], .myform select {
+   padding: .3rem;
+   width:250px;
+   border-radius: .3rem;
+   font-family: "Oxygen", serif;
+}
+
+.myform :required {
+    background-color: rgba(242, 167, 27, 0.4); /* Light yellow tint */
+    border: 2px solid #3365a6}
+
+.myform textarea {
+    height: 6rem;
+    width: 18rem;
+}
+
+.myform input[type="submit"]:hover {
+    background: #e09117;
+}
+.myform input[type="submit"] {
+    background: #f2a71b;
+    color: #162440;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    font-size: 16px;
+    margin: 1rem 0 0 1vw;
+}
+
+.myform legend {
+    font-weight: bold;
+    color: #3365a6;
+    font-size: 18px;
+
+}
+
+header, nav, main, footer {
+    max-width: 80rem;
+    margin: 0 auto;
+}
