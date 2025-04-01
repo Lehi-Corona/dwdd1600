@@ -1,0 +1,285 @@
+* {box-sizing: border-box;}
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+}
+
+/** Hero Image **/
+figure.hero {
+    width: 100%;
+    margin: 0;
+}
+
+figure.hero img {
+    width: 100%;
+    height: auto;
+}
+/** Header Stuff **/
+
+header {
+    background-color: #a8d0e6;
+    padding: 1rem 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+header span {
+    color: #f76c6c;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/** Small Screens **/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display:block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #374785;
+        color: #374785;
+    }
+    nav .active a {
+        background-color: #374785;
+        color: #f8e1a9;
+    }
+    .package-image {
+        float: none; 
+        text-align: center; 
+    }
+
+    .package-image img {
+        max-width: 100%; 
+    }
+} /** end of media query **/
+
+/** Big Screens **/
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #374785;
+    }
+    
+    nav ul {
+        margin: 0;
+        list-style-type: none;
+        padding: 0 10px;
+        display: flex;
+    }
+    
+    nav a {
+        display: block;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #f8e1a9;
+        font-weight: 700;
+    }
+    
+    nav li.active a {
+        background-color: #f8e1a9;
+        color:#374785
+    }
+    
+    nav li a:hover {
+        color:white;
+    }
+} /** end of media query **/
+
+
+
+/** Main Stuff **/
+
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #f76c6c;
+}
+
+main h2 {
+    color: #f76c6c;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0;
+    color: #333;
+}
+
+main ol {
+    padding: .5rem 18px;
+    margin-top: 0;
+}
+
+main ol li strong {
+    color: #374785;
+}
+
+/** Footer Stuff **/
+
+footer {
+    background-color: #a8d0e6;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: .8rem;
+    color: #333;
+}
+/** Gallery **/
+
+div.gallery {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 auto;
+}
+div.gallery figcaption {
+    text-align: center;
+    color: #374785;
+}
+/** Form Stuff **/
+.myform {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: #3365a6;
+}
+
+.myform label {
+    margin:.5rem;
+}
+.myform label, .myform select, .myform [type=text],.myform [type=tel], .myform [type=email], .myform textarea, .myform [type=date], .myform select {
+    display:block
+}
+
+.myform select {
+    margin: .5rem
+}
+
+.myform fieldset {
+    margin-bottom: 1rem;
+    border: 2px solid #a8d0e6
+}
+
+.myform select, .myform [type=text],.myform [type=tel], .myform [type=email], .myform [type=date], .myform select {
+   padding: .3rem;
+   width:250px;
+   border-radius: .3rem;
+   border: solid 1px #a8d0e6;
+   font-family: "Montserrat", sans-serif;
+}
+
+.myform :required {
+    background-color: #f76c6c
+    border 2px solid #3365a6}
+
+.myform textarea {
+    height: 6rem;
+    width: 18rem;
+}
+
+.myform input[type="submit"]:hover {
+    background: #374785;
+}
+.myform input[type="submit"] {
+    background: #a8d0e6;
+    color: #f76c6c;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    font-size: 16px;
+    margin: 1rem 0 0 1vw;
+}
+
+.myform legend {
+    font-weight: bold;
+    color: #374785;
+    font-size: 18px;
+}
+ main {
+    max-width: 82rem;
+    margin: 0 auto;
+   }
+   
+.myform input.submit {
+    width: auto;
+}
+ /** package image cards **/
+.packages {
+    max-width: auto; 
+    margin: auto;
+    padding: 20px; 
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    border: 2px solid #a8d0e6;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.packages figure {
+    float: left; 
+    margin-right: 15px; 
+    margin-bottom: 10px;
+}
+
+.packages img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px; 
+}
+
+.packages p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.packages a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #374785;
+}
+
+.packages a:hover {
+    color: #f76c6c;
+}
+
+div.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
